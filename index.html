@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Expedia</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#"><img class="logo" src="./images/logos/Expedia_2012_logo 1.png" alt="logo"></a>
+                <ol>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Trips</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Travel</a></li>
+                </ol>
+                <button class="btn_sign_up">Sign Up</button>
+            </nav>
+            <h1>It Matters Who You<br>Travel With</h1>
+            <p class="subtext">We want you to feel confident in the travel experience you will have with us.</p>
+        </div>
+    </header>
+    <section>
+        <form action="#">
+            <ol>
+                <li><a href="#">Stays</a></li>
+                <li><a href="#">Flight</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Things to do</a></li>
+            </ol>
+            <div class="line"></div>
+            <div class="radio_btns">
+                <label class="radio_container">One-way
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio_container">Return
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio_container">Multi-city
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <select name="amount_traveler" id="amount_traveler" required="required">
+                    <option value="1">1 traveler</option>
+                    <option value="2">2 traveler</option>
+                    <option value="3">3 traveler</option>
+                    <option value="4">4 traveler</option>
+                </select>
+                <select name="aircraft_service" id="aircraft_service" required="required"> 
+                    <option value="1">Economy</option>
+                    <option value="2">Business</option>
+                    <option value="3">First grade</option>
+                </select>
+            </div>
+            <div class="air_flight">
+                <img class="departures1" src="./images/icons/departures 1.png" alt="departures1">
+                <input type="text" name="from" placeholder="from">
+                <button></button>
+                <img class="departures2" src="./images/icons/departures 2.png" alt="departures2">
+                <input type="text" name="to" placeholder="to">
+                <input type="date" name="departing" id="departing">
+                <input type="date" name="returning" id="returning">
+                <p>Departing</p>
+                <p>Returning</p>
+            </div>
+            <button class="search">Search</button>
+        </form>
+    </section>
+    <section class="recomendation">
+        <div class="container">
+            <h2>Top Most Popular Destinations</h2>
+            <div class="pictures">
+                 <div>
+                    <img src="./images/recomendation_imgs/pic1.png" alt="Moraine_Lake">
+                    <div class="counry_place">
+                        <a href="#">
+                            <p>Moraine Lake</p>
+                            <p>Alberta, Canada</p>
+                        </a>
+                    </div>
+                 </div>
+                <div>
+                    <img src="./images/recomendation_imgs/pic2.png" alt="Cappadocia">
+                    <div class="counry_place">
+                        <a href="#">
+                            <p>Cappadocia</p>
+                            <p>Anatolia,<br>Turkey</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/recomendation_imgs/pic3.png" alt="Ubud">
+                    <div class="counry_place">
+                        <a href="#">
+                            <p>Ubud</p>
+                            <p>Bali,<br>Indonesia</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/recomendation_imgs/pic4.png" alt="Hokokuji_Bamboo">
+                    <div class="counry_place">
+                        <a href="#">
+                            <p>Hokokuji Bamboo<br>Forest</p>
+                            <p>Kamakura, Japan</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/recomendation_imgs/pic5.png" alt="">
+                    <div class="counry_place">
+                        <a href="#">
+                            <p>Kirkjufell</p>
+                            <p>Grundarfjordur's,<br> Iceland</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="download">Download<br>Expedia App !</h2>
+            <div class="download_links">
+                <a href="#"><img src="./images/logos/google-play-badge 1.png" alt="google-play"></a>
+                <a href="#"><img src="./images/logos/5a902db97f96951c82922874 1.png" alt="apostore"></a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer_container">
+                    <div>
+                        <a href="#"><img src="./images/logos/Expedia_2012_logo 1.png" alt="logo"></a>
+                        <p>© 2021 Expedia, Inc., an Expedia<br> Group company. All rights<br> reserved. </p>    
+                    </div>
+                    <div>
+                        <ol>
+                            <li>Company</li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">List your property</a></li>
+                            <li><a href="#">Partnership</a></li>
+                            <li><a href="#">Advertising</a></li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>Explore</li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">List your property</a></li>
+                            <li><a href="#">Partnership</a></li>
+                            <li><a href="#">Advertising</a></li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>Term and Policies</li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">List your property</a></li>
+                            <li><a href="#">Partnership</a></li>
+                            <li><a href="#">Advertising</a></li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>Help</li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">List your property</a></li>
+                            <li><a href="#">Partnership</a></li>
+                            <li><a href="#">Advertising</a></li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>Get in touch</li>
+                            <li><a href="#">Question or feedback?</a></li>
+                            <li><a href="#">We’d love to hear from you</a></li>
+                        </ol>
+                        <div class="links">
+                            <a href="#"><img src="./images/social_logos/akar-icons_instagram-fill.png" alt="instagram"></a>
+                            <a href="#"><img src="./images/social_logos/Group.png" alt="twitter"></a>
+                            <a href="#"><img src="./images/social_logos/Group (1).png" alt="in"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
