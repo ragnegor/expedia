@@ -1,0 +1,469 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px auto;
+    font-family: "Montserrat";
+    background-color: #222831;
+    max-width: 1441px;
+}
+
+header {
+    height: 600px;
+    background: url(./images/bacground_imgs/header_back_img.png) center center/cover no-repeat;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    padding-top: 40px;
+}
+
+nav ol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ol li {
+    transition: all 500ms ease;
+}
+
+nav ol li:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+nav ol a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.btn_sign_up {
+    width: 160px;
+    height: 50px;
+    border-radius: 39px;
+    border: none;
+    padding: 16px 50px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    background: rgba(31, 74, 168, 1);
+    box-shadow: 0px 2px 5px 0px rgb(102 102 102);
+    transition: all 500ms ease;
+}
+
+.btn_sign_up:hover,
+.search:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 145px;
+}
+
+.subtext {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.055em;
+    color: #FFFFFF;
+    margin-top: 35px;
+}
+
+form {
+    position: relative;
+    height: 280px;
+    width: 1240px;
+    padding: 20px 43px 24px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    margin-top: -70px;
+    border-radius: 30px;
+}
+
+form ol {
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+form ol a {
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #888AA2;
+}
+
+form .line {
+    margin: 0 auto;
+    height: 1px;
+    max-width: 1152px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.68), white);
+}
+
+form .radio_btns {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+form .radio_btns select#amount_traveler {
+    margin-left: 480px;
+   
+}
+
+form .radio_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    padding-right: 60px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+form .radio_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+form .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border: 3px solid #1F4AA8;
+    border-radius: 50%;
+}
+
+form .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+form .radio_container input:checked~.checkmark:after {
+    display: block;
+}
+
+form .radio_container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1F4AA8;
+}
+
+form .radio_btns select {
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #1F4AA8;
+    outline: none;
+    cursor: pointer;
+}
+
+form .air_flight {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+form .air_flight :first-child {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+form .air_flight :nth-child(4) {
+    position: absolute;
+    top: 10px;
+    left: 432px;
+}
+
+form .air_flight button {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0px 9px;
+    background: #FFFFFF;
+    background: url(./images/icons/akar-icons_arrow-right-left.png) center center no-repeat;
+    cursor: pointer;
+}
+
+form .air_flight p {
+    position: absolute;
+    margin: 0;
+    font-size: 11px;
+    color: #000000;
+    top: 3px;
+    left: 840px;
+}
+
+form .air_flight :nth-child(9) {
+    left: 1022px;
+}
+
+
+form .air_flight input[type=text] {
+    border: 0.5px solid #5F5F5F;
+    width: 363.85px;
+    height: 48.29px;
+    border-radius: 10px;
+    padding: 12px 20px 12px 64px;
+    font-size: 16px;
+}
+
+form .air_flight input[type=date]{
+    width: 174.65px;
+    height: 48.29px;
+    border: 0.5px solid #5F5F5F;
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+
+form .air_flight ::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url(./images/icons/bx_bx-calendar.png) no-repeat center;
+    background-size: contain;
+    height: 24px;
+    width: 26px;
+  }
+
+form .air_flight :nth-child(6) {
+    margin: 0px 7px 0px 15px;
+}
+
+form .search {
+    width: 232.86px;
+    height: 60.36px;
+    background: #1F4AA8;
+    border-radius: 39px;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 18px;
+    box-shadow: 0px 2px 5px 0px rgb(102 102 102);
+    transition: all 500ms ease;
+}
+
+.recomendation {
+    margin-top: 100px;
+}
+
+.recomendation h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+    margin: 0px;
+}
+
+.pictures {
+    padding-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+}
+
+.pictures div {
+    transition: all 500ms ease;
+}
+
+.pictures div:hover {
+    transform: scale(1.1);
+    transition: all 500ms ease;
+}
+
+.pictures div:nth-child(1) {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.pictures div:nth-child(2) {
+    grid-row: 1/3;
+}
+
+.pictures div:nth-child(3) {
+    grid-row: 1/3;
+}
+
+.pictures div:nth-child(4) {
+    grid-row: 2/3;
+}
+
+.pictures div {
+    position: relative;
+}
+
+.pictures .counry_place a {
+    text-decoration: none;
+}
+
+.pictures .counry_place p:nth-child(1) {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: white;
+    margin: 0;
+}
+
+.pictures .counry_place p:nth-child(2) {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    margin-top: 5px;
+}
+
+.pictures div .counry_place {
+    position: absolute;
+    bottom: 5px;
+    left: 30px;
+}
+
+.download {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.download_links {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download_links a:nth-child(2) {
+    margin-left: 10px;
+}
+
+footer {
+    margin-top: 100px;
+    min-height: 330px;
+    background: #133B5C;
+}
+
+.footer_container {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 24px;
+    justify-items: center;
+}
+
+.footer_container div:first-child {
+    display: grid;
+    grid-template-columns: minmax(250px, 200px);
+    grid-template-rows: repeat(2, auto);
+
+}
+
+.footer_container div:first-child p {
+    grid-row: 2/3;
+    margin-top: 65px;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.footer_container div ol {
+    margin: 0;
+    padding: 0;
+}
+
+.footer_container div ol li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    list-style-type: none;
+    padding-bottom: 10px;
+    transition: all 0.5s ease;
+}
+
+.footer_container div ol li:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.footer_container div ol li:first-child {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    transition: none;
+    transform: none;
+}
+
+.footer_container div a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer_container div:nth-child(6) {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+.footer_container .links a:nth-child(2) {
+    margin: 0 30px;
+}
+
+.footer_container .links {
+    display: flex;
+    align-items: flex-end;
+}
